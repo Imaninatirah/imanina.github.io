@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<style>
+    /*Hover Button*/
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    /*Blue Button*/
+    .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008CBA;
+    }
+
+    .button2:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+
+    /*Red Button*/d
+    .button3 {
+        background-color: white;
+        color: black;
+        border: 2px solid #f44336;
+    }
+
+    .button3:hover {
+        background-color: #f44336;
+        color: white;
+    }
+</style>
+    
+<body>
+    <header>
+        <h1>Welcome to My Page</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="gallery.html">My Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <section class="content2">
+        <h1 style="background-color:lightpink; text-align: center;">Hello Everyone</h1>
+        <p>This site that you are viewing now is an appearance of all I have immersed myself into and put my effort and dedication to, during these days in the semester. Informally I wanted to establish myself as a site where not only skills will be shown but also personality and imagination. Starting from the design of the website through to the investigating through of its interactive nature, each aspect of this site has been carefully taken into close account to provide all visitors with both an exciting and fluent experience.
+        </p>
+        <h2 style="background-color:lightpink; text-align: center;">Let's Play Our Background Music!</h2>
+
+        <!-- This is music background for this page -->
+        <div align="center">
+            <audio id="myMusic" controls loop>
+                <source src="music/FileIsland_Start_Village.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>Click the buttons to adjust set the volume of the audio player.</p>
+
+            <button class="button button2" onclick="setHalfVolume()" type="button">Set volume to 15%</button>
+            <button class="button button3" onclick="setFullVolume()" type="button">Set volume to 100%</button>
+        </div>
+
+        <script src="adjust-volume.js"></script>
+
+        </section>
+    
+
+    <footer>
+        <p>Website Created By: Nurimanina - IML470</p>
+    </footer>
+</body>
+</html>
